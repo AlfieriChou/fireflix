@@ -4,7 +4,9 @@ interface CamelObject {
   [s: string]: any
 }
 
-export const camelizeKeys = (obj: CamelObject): CamelObject => {
+export const camelizeKeys = (
+  obj: CamelObject | CamelObject[]
+): CamelObject | CamelObject[] => {
   if (Array.isArray(obj)) {
     return obj.map(v => camelizeKeys(v))
   }

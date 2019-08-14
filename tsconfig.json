@@ -23,7 +23,7 @@
     "inlineSourceMap": true,
     "importHelpers": true,
     "moduleResolution": "node",
-    "outDir": "./build"
+    "outDir": "./dist"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]

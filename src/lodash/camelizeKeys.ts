@@ -7,7 +7,8 @@ interface CamelObject {
 export const camelizeKeys = (obj: CamelObject): CamelObject => {
   if (Array.isArray(obj)) {
     return obj.map(v => camelizeKeys(v))
-  } else if (obj !== null && obj.constructor === Object) {
+  }
+  if (obj !== null && obj.constructor === Object) {
     return Object.keys(obj).reduce(
       (result, key) => ({
         ...result,

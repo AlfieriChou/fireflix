@@ -2,18 +2,16 @@ import * as IORedis from 'ioredis'
 
 export class RedisStore {
   private readonly redis: IORedis.Redis
-  private readonly expire: number | undefined
-  constructor(options: IORedis.RedisOptions, expire?: number) {
+  constructor(options: IORedis.RedisOptions) {
     this.redis = new IORedis(options)
-    this.expire = expire
   }
 
-  public async incr(key: string): Promise<number> {
-    if (this.expire) {
+  public async incr(key: string, expire?: number): Promise<number> {
+    if (expire) {
       const result = await this.redis
         .multi()
         .incr(key)
-        .expire(key, this.expire)
+        .expire(key, expire)
         .exec()
       return result[0][1]
     }

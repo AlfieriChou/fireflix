@@ -1,6 +1,7 @@
 import * as FormData from 'form-data'
 import Axios from 'axios'
 import { promisify } from 'util'
+import * as http from 'http'
 
 interface DataObj {
   [s: string]: any
@@ -23,7 +24,7 @@ async function getFormHeaders (form: FormData) {
   }
 }
 
-export const fileUpload = async (url: string, data: DataObj, headers?: DataObj) => {
+export const fileUpload = async (url: string, data: DataObj, headers?: http.IncomingHttpHeaders) => {
   const formData = buildForm(data)
   let formHeaders = await getFormHeaders(formData)
   if (headers) {

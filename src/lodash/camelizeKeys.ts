@@ -1,12 +1,12 @@
 import { camelCase } from 'lodash'
 
-interface CamelObject {
+export interface ICamelObject {
   [s: string]: any
 }
 
 export const camelizeKeys = (
-  obj: CamelObject | CamelObject[]
-): CamelObject | CamelObject[] => {
+  obj: ICamelObject | ICamelObject[]
+): ICamelObject | ICamelObject[] => {
   if (Array.isArray(obj)) {
     return obj.map(v => camelizeKeys(v))
   }

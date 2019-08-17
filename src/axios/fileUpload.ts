@@ -7,7 +7,7 @@ interface DataObj {
   [s: string]: any
 }
 
-function buildForm (data: DataObj) {
+function buildForm(data: DataObj) {
   const form = new FormData()
   for (let item in data) {
     form.append(item, data[item])
@@ -15,7 +15,7 @@ function buildForm (data: DataObj) {
   return form
 }
 
-async function getFormHeaders (form: FormData) {
+async function getFormHeaders(form: FormData) {
   const getLen = promisify(form.getLength).bind(form)
   const len = await getLen()
   return {
@@ -24,7 +24,11 @@ async function getFormHeaders (form: FormData) {
   }
 }
 
-export const fileUpload = async (url: string, data: DataObj, headers?: http.IncomingHttpHeaders) => {
+export const fileUpload = async (
+  url: string,
+  data: DataObj,
+  headers?: http.IncomingHttpHeaders
+) => {
   const formData = buildForm(data)
   let formHeaders = await getFormHeaders(formData)
   if (headers) {
@@ -32,7 +36,7 @@ export const fileUpload = async (url: string, data: DataObj, headers?: http.Inco
       ...headers,
       ...formHeaders
     }
-  } 
+  }
   const res = await Axios.post(url, formData, {
     headers: {
       ...formHeaders

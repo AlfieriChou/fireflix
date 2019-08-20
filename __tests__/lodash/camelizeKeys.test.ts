@@ -1,7 +1,7 @@
 import { camelizeKeys, ICamelObject } from '../../src/lodash/camelizeKeys'
 
 describe('test camelizeKeys!!！', () => {
-  it('object!!', (done) => {
+  it('object!!', done => {
     const testObj: ICamelObject = {
       hello_world: 'test'
     }
@@ -12,14 +12,18 @@ describe('test camelizeKeys!!！', () => {
     done()
   })
 
-  it('array!!', (done) => {
-    const testObj: ICamelObject[] = [{
-      hello_world: 'test'
-    }]
+  it('array!!', done => {
+    const testObj: ICamelObject[] = [
+      {
+        hello_world: 'test'
+      }
+    ]
     const camelizeObj = camelizeKeys(testObj)
-    expect(camelizeObj).toMatchObject([{
-      helloWorld: 'test'
-    }])
+    expect(camelizeObj).toMatchObject([
+      {
+        helloWorld: 'test'
+      }
+    ])
     done()
   })
 })

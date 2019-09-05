@@ -2,7 +2,7 @@ interface QueueOptions {
   delayUntil?: number
 }
 
-export default class Queue<T> {
+export class Queue<T> {
   private list: T[] = []
   private delayedItems: number = 0
 

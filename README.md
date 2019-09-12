@@ -2,24 +2,29 @@
 
 Summary of common functions.
 
+## array
+
+- groupBy
+- orderBy
+
 ## lodash
 
-* camelizeKeys
-* snakelizeKeys
+- camelizeKeys
+- snakelizeKeys
 
 ## cache
 
-* fifo
-* lru
+- fifo
+- lru
 
 ## axios
 
-* file upload
+- file upload
 
 ## queue
 
-* queue
+- queue
 
 ## rateLimit
 
-* redis
+- redis

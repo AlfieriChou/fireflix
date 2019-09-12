@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+node_js:
+  - '8'
+  - '10'
+install:
+  - npm i yarn -g && yarn
+script:
+  - yarn run test
+branches:
+  only:
+    - master

@@ -9,7 +9,7 @@ const dynamicSort = (property: string): ((a: Obj, b: Obj) => number) => {
     property = property.substring(1)
   }
   return (a, b) => {
-    let ret
+    let ret: number
     if (a[property] < b[property]) {
       ret = -1
     } else if (a[property] > b[property]) {

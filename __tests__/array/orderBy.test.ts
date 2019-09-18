@@ -1,4 +1,4 @@
-import { orderBy } from '../../src/array/orderBy'
+import { orderBy } from '../../src/array/orderBy';
 
 interface IPeople {
   name: string
@@ -11,8 +11,8 @@ const peoples: IPeople[] = [
   { name: 'And', age: 45 },
   { name: 'The', age: 12 },
   { name: 'Magnetic', age: 13 },
-  { name: 'Zeros', age: 37 }
-]
+  { name: 'Zeros', age: 37 },
+];
 
 const ascAgePeoples: IPeople[] = [
   { name: 'The', age: 12 },
@@ -20,8 +20,8 @@ const ascAgePeoples: IPeople[] = [
   { name: 'Edward', age: 21 },
   { name: 'Sharpe', age: 37 },
   { name: 'Zeros', age: 37 },
-  { name: 'And', age: 45 }
-]
+  { name: 'And', age: 45 },
+];
 
 const descAgePeoples: IPeople[] = [
   { name: 'And', age: 45 },
@@ -29,18 +29,18 @@ const descAgePeoples: IPeople[] = [
   { name: 'Zeros', age: 37 },
   { name: 'Edward', age: 21 },
   { name: 'Magnetic', age: 13 },
-  { name: 'The', age: 12 }
-]
+  { name: 'The', age: 12 },
+];
 
 describe('test orderBy!!', () => {
   it('asc!', done => {
-    const result = orderBy(peoples, 'age')
-    expect(result).toEqual(ascAgePeoples)
-    done()
-  })
+    const result = orderBy(peoples, 'age');
+    expect(result).toEqual(ascAgePeoples);
+    done();
+  });
   it('desc!', done => {
-    const result = orderBy(peoples, '-age')
-    expect(result).toEqual(descAgePeoples)
-    done()
-  })
-})
+    const result = orderBy(peoples, '-age');
+    expect(result).toEqual(descAgePeoples);
+    done();
+  });
+});

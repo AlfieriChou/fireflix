@@ -1,9 +1,10 @@
-import * as IORedis from 'ioredis'
+import * as IORedis from 'ioredis';
 
-export class RedisStore {
-  private readonly redis: IORedis.Redis
+class RedisStore {
+  private readonly redis: IORedis.Redis;
+
   constructor(options: IORedis.RedisOptions) {
-    this.redis = new IORedis(options)
+    this.redis = new IORedis(options);
   }
 
   public async incr(key: string, expire?: number): Promise<number> {
@@ -12,10 +13,12 @@ export class RedisStore {
         .multi()
         .incr(key)
         .expire(key, expire)
-        .exec()
-      return result[0][1]
+        .exec();
+      return result[0][1];
     }
-    const result = await this.redis.incr(key)
-    return result
+    const result = await this.redis.incr(key);
+    return result;
   }
 }
+
+export default RedisStore;

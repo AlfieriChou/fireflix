@@ -23,12 +23,9 @@ const groupResult: GroupObj = {
   plant: [{ name: 'osmanthus', category: 'plant' }],
 };
 
-// eslint-disable-next-line no-undef
 describe('test groupBy!!', () => {
-  // eslint-disable-next-line no-undef
   it('groupBy!', done => {
     const result = groupBy(noGroupArr, 'category');
-    // eslint-disable-next-line no-undef
     expect(result).toMatchObject(groupResult);
     done();
   });

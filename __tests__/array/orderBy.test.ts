@@ -32,19 +32,14 @@ const descAgePeoples: IPeople[] = [
   { name: 'The', age: 12 },
 ];
 
-// eslint-disable-next-line no-undef
 describe('test orderBy!!', () => {
-  // eslint-disable-next-line no-undef
   it('asc!', done => {
     const result = orderBy(peoples, 'age');
-    // eslint-disable-next-line no-undef
     expect(result).toEqual(ascAgePeoples);
     done();
   });
-  // eslint-disable-next-line no-undef
   it('desc!', done => {
     const result = orderBy(peoples, '-age');
-    // eslint-disable-next-line no-undef
     expect(result).toEqual(descAgePeoples);
     done();
   });

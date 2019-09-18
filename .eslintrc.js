@@ -1,3 +1,6 @@
 module.exports = {
-  extends: ["airbnb-typescript"]
+  extends: ["airbnb-typescript"],
+  env: {
+    jest: true
+  }
 }

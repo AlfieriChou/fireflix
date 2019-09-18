@@ -9,7 +9,7 @@
     "test": "jest --coverage --detectOpenHandles --forceExit",
     "commit": "git-cz",
     "release": "standard-version",
-    "lint": "eslint --ext .js,.ts ./ --fix"
+    "lint": "eslint --ext .ts ./ --fix"
   },
   "config": {
     "commitizen": {

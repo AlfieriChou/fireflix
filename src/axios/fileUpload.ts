@@ -9,9 +9,7 @@ interface DataObj {
 
 function buildForm(data: DataObj) {
   const form = new FormData();
-  for (const item in data) {
-    form.append(item, data[item]);
-  }
+  Object.entries(data).forEach(([k, v]) => form.append(k, v));
   return form;
 }
 
@@ -24,7 +22,7 @@ async function getFormHeaders(form: FormData) {
   };
 }
 
-export const fileUpload = async (
+const fileUpload = async (
   url: string,
   data: DataObj,
   headers?: http.IncomingHttpHeaders,
@@ -44,3 +42,5 @@ export const fileUpload = async (
   });
   return res;
 };
+
+export default fileUpload;

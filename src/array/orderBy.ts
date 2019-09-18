@@ -2,11 +2,14 @@ interface Obj {
   [s: string]: any
 }
 
-const dynamicSort = (property: string): ((a: Obj, b: Obj) => number) => {
+const dynamicSort = (prop: string): ((a: Obj, b: Obj) => number) => {
   let order: number = 1;
-  if (property.startsWith('-')) {
+  let property: string;
+  if (prop.startsWith('-')) {
     order = -1;
-    property = property.substring(1);
+    property = prop.substring(1);
+  } else {
+    property = prop;
   }
   return (a, b) => {
     let ret;
@@ -21,4 +24,6 @@ const dynamicSort = (property: string): ((a: Obj, b: Obj) => number) => {
   };
 };
 
-export const orderBy = (objs: Obj[], property: string): Obj[] => objs.sort(dynamicSort(property));
+const orderBy = (objs: Obj[], property: string): Obj[] => objs.sort(dynamicSort(property));
+
+export default orderBy;

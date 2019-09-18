@@ -7,8 +7,9 @@ interface GroupObj {
 }
 
 const groupBy = (list: Obj[], key: string) => list.reduce((result: GroupObj, item: Obj) => {
-  (result[item[key]] = result[item[key]] || []).push(item);
-  return result;
+  const ret: GroupObj = result;
+  (ret[item[key]] = ret[item[key]] || []).push(item);
+  return ret;
 }, {});
 
 export default groupBy;

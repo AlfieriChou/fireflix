@@ -1,4 +1,4 @@
-class LRU {
+class LruCache {
   private cache: Map<string, any>;
 
   private capacity: number;
@@ -29,4 +29,4 @@ class LRU {
   }
 }
 
-export default LRU;
+export default LruCache;

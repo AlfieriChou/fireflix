@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/AlfieriChou/sharp-func/compare/v1.2.0...v2.0.0) (2019-09-20)
+
+
+### Bug Fixes
+
+* conflict ([0a0e956](https://github.com/AlfieriChou/sharp-func/commit/0a0e956))
+
+
+### Features
+
+* string is JSON ([524d9cd](https://github.com/AlfieriChou/sharp-func/commit/524d9cd))
+
 ## 1.2.0 (2019-09-14)
 
 

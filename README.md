@@ -28,3 +28,7 @@ Summary of common functions.
 ## rateLimit
 
 - redis
+
+## string
+
+- isJson

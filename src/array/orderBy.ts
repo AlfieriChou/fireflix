@@ -12,7 +12,7 @@ const dynamicSort = (prop: string): ((a: Obj, b: Obj) => number) => {
     property = prop;
   }
   return (a, b) => {
-    let ret;
+    let ret: number
     if (a[property] < b[property]) {
       ret = -1;
     } else if (a[property] > b[property]) {

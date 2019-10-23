@@ -631,15 +631,6 @@
     regexpp "^2.0.1"
     tsutils "^3.17.1"
 
-"@typescript-eslint/experimental-utils@1.13.0":
-  version "1.13.0"
-  resolved "https://registry.npm.taobao.org/@typescript-eslint/experimental-utils/download/@typescript-eslint/experimental-utils-1.13.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-1.13.0.tgz#b08c60d780c0067de2fb44b04b432f540138301e"
-  integrity sha1-sIxg14DABn3i+0SwS0MvVAE4MB4=
-  dependencies:
-    "@types/json-schema" "^7.0.3"
-    "@typescript-eslint/typescript-estree" "1.13.0"
-    eslint-scope "^4.0.0"
-
 "@typescript-eslint/experimental-utils@2.3.0":
   version "2.3.0"
   resolved "https://registry.npm.taobao.org/@typescript-eslint/experimental-utils/download/@typescript-eslint/experimental-utils-2.3.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fexperimental-utils%2Fdownload%2F%40typescript-eslint%2Fexperimental-utils-2.3.0.tgz#19a8e1b8fcee7d7469f3b44691d91830568de140"
@@ -649,29 +640,41 @@
     "@typescript-eslint/typescript-estree" "2.3.0"
     eslint-scope "^5.0.0"
 
-"@typescript-eslint/parser@^1.11.0":
-  version "1.13.0"
-  resolved "https://registry.npm.taobao.org/@typescript-eslint/parser/download/@typescript-eslint/parser-1.13.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-1.13.0.tgz#61ac7811ea52791c47dc9fd4dd4a184fae9ac355"
-  integrity sha1-Yax4EepSeRxH3J/U3UoYT66aw1U=
+"@typescript-eslint/experimental-utils@2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-2.5.0.tgz#383a97ded9a7940e5053449f6d73995e782b8fb1"
+  integrity sha512-UgcQGE0GKJVChyRuN1CWqDW8Pnu7+mVst0aWrhiyuUD1J9c+h8woBdT4XddCvhcXDodTDVIfE3DzGHVjp7tUeQ==
+  dependencies:
+    "@types/json-schema" "^7.0.3"
+    "@typescript-eslint/typescript-estree" "2.5.0"
+    eslint-scope "^5.0.0"
+
+"@typescript-eslint/parser@^2.3.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-2.5.0.tgz#858030ddd808fbbe88e03f42e5971efaccb8218a"
+  integrity sha512-9UBMiAwIDWSl79UyogaBdj3hidzv6exjKUx60OuZuFnJf56tq/UMpdPcX09YmGqE8f4AnAueYtBxV8IcAT3jdQ==
   dependencies:
     "@types/eslint-visitor-keys" "^1.0.0"
-    "@typescript-eslint/experimental-utils" "1.13.0"
-    "@typescript-eslint/typescript-estree" "1.13.0"
-    eslint-visitor-keys "^1.0.0"
-
-"@typescript-eslint/typescript-estree@1.13.0":
-  version "1.13.0"
-  resolved "https://registry.npm.taobao.org/@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-1.13.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-1.13.0.tgz#8140f17d0f60c03619798f1d628b8434913dc32e"
-  integrity sha1-gUDxfQ9gwDYZeY8dYouENJE9wy4=
-  dependencies:
-    lodash.unescape "4.0.1"
-    semver "5.5.0"
+    "@typescript-eslint/experimental-utils" "2.5.0"
+    "@typescript-eslint/typescript-estree" "2.5.0"
+    eslint-visitor-keys "^1.1.0"
 
 "@typescript-eslint/typescript-estree@2.3.0":
   version "2.3.0"
   resolved "https://registry.npm.taobao.org/@typescript-eslint/typescript-estree/download/@typescript-eslint/typescript-estree-2.3.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Ftypescript-estree%2Fdownload%2F%40typescript-eslint%2Ftypescript-estree-2.3.0.tgz#fd8faff7e4c73795c65e5817c52f9038e33ef29d"
   integrity sha1-/Y+v9+THN5XGXlgXxS+QOOM+8p0=
   dependencies:
+    glob "^7.1.4"
+    is-glob "^4.0.1"
+    lodash.unescape "4.0.1"
+    semver "^6.3.0"
+
+"@typescript-eslint/typescript-estree@2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-2.5.0.tgz#40ada624d6217ef092a3a79ed30d947ad4f212ce"
+  integrity sha512-AXURyF8NcA3IsnbjNX1v9qbwa0dDoY9YPcKYR2utvMHoUcu3636zrz0gRWtVAyxbPCkhyKuGg6WZIyi2Fc79CA==
+  dependencies:
+    debug "^4.1.1"
     glob "^7.1.4"
     is-glob "^4.0.1"
     lodash.unescape "4.0.1"
@@ -1353,10 +1356,10 @@ concat-stream@^2.0.0:
     readable-stream "^3.0.2"
     typedarray "^0.0.6"
 
-confusing-browser-globals@^1.0.5:
-  version "1.0.8"
-  resolved "https://registry.npm.taobao.org/confusing-browser-globals/download/confusing-browser-globals-1.0.8.tgz#93ffec1f82a6e2bf2bc36769cc3a92fa20e502f3"
-  integrity sha1-k//sH4Km4r8rw2dpzDqS+iDlAvM=
+confusing-browser-globals@^1.0.7:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.9.tgz#72bc13b483c0276801681871d4898516f8f54fdd"
+  integrity sha512-KbS1Y0jMtyPgIxjO7ZzMAuUpAKMt1SzCL9fsrKsX6b0zJPTaT0SiSPmewwVZg9UAO83HVIlEhZF84LIjZ0lmAw==
 
 console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
@@ -1983,30 +1986,30 @@ escodegen@^1.9.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-airbnb-base@^13.1.0, eslint-config-airbnb-base@^13.2.0:
-  version "13.2.0"
-  resolved "https://registry.npm.taobao.org/eslint-config-airbnb-base/download/eslint-config-airbnb-base-13.2.0.tgz#f6ea81459ff4dec2dda200c35f1d8f7419d57943"
-  integrity sha1-9uqBRZ/03sLdogDDXx2PdBnVeUM=
+eslint-config-airbnb-base@^14.0.0:
+  version "14.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.0.0.tgz#8a7bcb9643d13c55df4dd7444f138bf4efa61e17"
+  integrity sha512-2IDHobw97upExLmsebhtfoD3NAKhV4H0CJWP3Uprd/uk+cHuWYOczPVxQ8PxLFUAw7o3Th1RAU8u1DoUpr+cMA==
   dependencies:
-    confusing-browser-globals "^1.0.5"
+    confusing-browser-globals "^1.0.7"
     object.assign "^4.1.0"
     object.entries "^1.1.0"
 
-eslint-config-airbnb-typescript@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.npm.taobao.org/eslint-config-airbnb-typescript/download/eslint-config-airbnb-typescript-4.0.1.tgz#516a95d6e8c495100973b0c49daa54bff0964434"
-  integrity sha1-UWqV1ujElRAJc7DEnapUv/CWRDQ=
+eslint-config-airbnb-typescript@5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb-typescript/-/eslint-config-airbnb-typescript-5.1.0.tgz#91088afe29607bacacd0d0c978f7f2f1795f316e"
+  integrity sha512-pzkOGX76OEd3AmxWPJUwasz4CY98KHNQgdwsiFpYd/M35vC33WiD9OaLq8eFYysy7+NVJtUuElgn879lrQ1rPw==
   dependencies:
-    "@typescript-eslint/parser" "^1.11.0"
-    eslint-config-airbnb "^17.1.0"
-    eslint-config-airbnb-base "^13.1.0"
+    "@typescript-eslint/parser" "^2.3.0"
+    eslint-config-airbnb "^18.0.1"
+    eslint-config-airbnb-base "^14.0.0"
 
-eslint-config-airbnb@^17.1.0:
-  version "17.1.1"
-  resolved "https://registry.npm.taobao.org/eslint-config-airbnb/download/eslint-config-airbnb-17.1.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-airbnb%2Fdownload%2Feslint-config-airbnb-17.1.1.tgz#2272e0b86bb1e2b138cdf88d07a3b6f4cda3d626"
-  integrity sha1-InLguGux4rE4zfiNB6O29M2j1iY=
+eslint-config-airbnb@^18.0.1:
+  version "18.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-18.0.1.tgz#a3a74cc29b46413b6096965025381df8fb908559"
+  integrity sha512-hLb/ccvW4grVhvd6CT83bECacc+s4Z3/AEyWQdIT2KeTsG9dR7nx1gs7Iw4tDmGKozCNHFn4yZmRm3Tgy+XxyQ==
   dependencies:
-    eslint-config-airbnb-base "^13.2.0"
+    eslint-config-airbnb-base "^14.0.0"
     object.assign "^4.1.0"
     object.entries "^1.1.0"
 
@@ -2042,14 +2045,6 @@ eslint-plugin-import@2.18.2:
     object.values "^1.1.0"
     read-pkg-up "^2.0.0"
     resolve "^1.11.0"
-
-eslint-scope@^4.0.0:
-  version "4.0.3"
-  resolved "https://registry.npm.taobao.org/eslint-scope/download/eslint-scope-4.0.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-scope%2Fdownload%2Feslint-scope-4.0.3.tgz#ca03833310f6889a3264781aa82e63eb9cfe7848"
-  integrity sha1-ygODMxD2iJoyZHgaqC5j65z+eEg=
-  dependencies:
-    esrecurse "^4.1.0"
-    estraverse "^4.1.1"
 
 eslint-scope@^5.0.0:
   version "5.0.0"
@@ -5448,11 +5443,6 @@ semver-compare@^1.0.0:
   version "5.7.1"
   resolved "https://registry.npm.taobao.org/semver/download/semver-5.7.1.tgz?cache=0&sync_timestamp=1565627367398&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha1-qVT5Ma66UI0we78Gnv8MAclhFvc=
-
-semver@5.5.0:
-  version "5.5.0"
-  resolved "https://registry.npm.taobao.org/semver/download/semver-5.5.0.tgz?cache=0&sync_timestamp=1565627380363&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemver%2Fdownload%2Fsemver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
-  integrity sha1-3Eu8emyp2Rbe5dQ1FvAJK1j3uKs=
 
 semver@6.1.1:
   version "6.1.1"

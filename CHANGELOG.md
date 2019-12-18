@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/AlfieriChou/sharp-func/compare/v1.2.0...v2.1.0) (2019-12-15)
+
+
+### Bug Fixes
+
+* conflict ([0a0e956](https://github.com/AlfieriChou/sharp-func/commit/0a0e956))
+
+
+### Features
+
+* decrtypted ([4f0585b](https://github.com/AlfieriChou/sharp-func/commit/4f0585b))
+* number groupBy ([bb01a8d](https://github.com/AlfieriChou/sharp-func/commit/bb01a8d))
+* permutation ([a0114aa](https://github.com/AlfieriChou/sharp-func/commit/a0114aa))
+* string is JSON ([524d9cd](https://github.com/AlfieriChou/sharp-func/commit/524d9cd))
+* stringPermutations and nest ([787ded5](https://github.com/AlfieriChou/sharp-func/commit/787ded5))
+* symmetricDifference ([7290c98](https://github.com/AlfieriChou/sharp-func/commit/7290c98))
+
 ## [2.0.0](https://github.com/AlfieriChou/sharp-func/compare/v1.2.0...v2.0.0) (2019-09-20)
 
 

@@ -1,7 +1,5 @@
 # sharp-func
 
-[![Build Status](https://github.com/AlfieriChou/sharp-func/workflows/ci/badge.svg?branch=master&event=push)](https://github.com/AlfieriChou/sharp-func/actions)
-
 Summary of common functions.
 
 ## array
@@ -9,6 +7,8 @@ Summary of common functions.
 - groupBy
 - numberGroupBy
 - orderBy
+- nest
+- symmetricDifference
 
 ## lodash
 
@@ -23,6 +23,11 @@ Summary of common functions.
 ## axios
 
 - file upload
+
+## combination
+
+- permutation
+- stringPermutation
 
 ## queue
 

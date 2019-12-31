@@ -3,7 +3,7 @@ declare class Limit {
 
   public clearAll(): void
 
-  public getValue(key: string): void | any
+  public getValue(key: string): any
 
   public length(): number
 
@@ -25,11 +25,8 @@ export default class CustomLimit implements Limit {
     this.cache.clear();
   }
 
-  // eslint-disable-next-line consistent-return
   public getValue(key: string) {
-    if (this.cache.has(key)) {
-      return this.cache.get(key);
-    }
+    return this.cache.get(key);
   }
 
   public length() {

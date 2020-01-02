@@ -41,6 +41,9 @@ Summary of common functions.
 ## object
 
 - renameKeys
+- pair
+  - objectToPairs
+  - objectFromPairs
 
 ## queue
 

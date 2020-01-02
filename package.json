@@ -3,8 +3,6 @@
   "version": "2.2.0",
   "description": "sharp func",
   "scripts": {
-    "format": "prettier --write \"**/*.{ts,js,josn}\"",
-    "tslint-check": "tslint-config-prettier-check ./tslint.json",
     "tsc": "tsc -p tsconfig.json",
     "test": "jest --coverage --detectOpenHandles --forceExit",
     "commit": "git-cz",

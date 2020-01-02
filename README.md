@@ -1,4 +1,4 @@
-# sharp-func
+# Fireflix
 
 Summary of common functions.
 
@@ -10,24 +10,37 @@ Summary of common functions.
 - nest
 - symmetricDifference
 
-## lodash
+## axios
 
-- camelizeKeys
-- snakelizeKeys
+- file upload
 
 ## cache
 
 - fifo
 - lru
 
-## axios
-
-- file upload
-
 ## combination
 
 - permutation
 - stringPermutation
+
+## crypto
+
+- decrypted
+- encrypted
+
+## limit
+
+- customLimit
+
+## lodash
+
+- camelizeKeys
+- snakelizeKeys
+
+## object
+
+- renameKeys
 
 ## queue
 
@@ -35,7 +48,7 @@ Summary of common functions.
 
 ## rateLimit
 
-- redis
+- redisStore
 
 ## string
 

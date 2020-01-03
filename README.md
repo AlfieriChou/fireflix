@@ -40,7 +40,11 @@ Summary of common functions.
 
 ## object
 
+- deepMapKeys
 - renameKeys
+- pair
+  - objectToPairs
+  - objectFromPairs
 
 ## queue
 

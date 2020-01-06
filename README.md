@@ -5,6 +5,10 @@ Summary of common functions.
 ## array
 
 - groupBy
+- intersection
+  - intersection
+  - intersectionBy
+  - intersectionWith
 - numberGroupBy
 - orderBy
 - nest

@@ -4,6 +4,9 @@ Summary of common functions.
 
 ## array
 
+- difference
+  - symmetricDifference
+  - uniqueSymmetricDifference
 - groupBy
 - intersection
   - intersection
@@ -12,7 +15,6 @@ Summary of common functions.
 - numberGroupBy
 - orderBy
 - nest
-- symmetricDifference
 
 ## axios
 

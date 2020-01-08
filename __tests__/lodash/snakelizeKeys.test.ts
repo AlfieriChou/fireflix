@@ -1,12 +1,8 @@
 import snakeKeys from '../../src/lodash/snakelizeKeys';
 
-interface ISnakeObject {
-  [s: string]: any
-}
-
 describe('test snakelizeKeys!!！', () => {
   it('object!!', done => {
-    const testObj: ISnakeObject = {
+    const testObj: Object = {
       helloWorld: 'test',
     };
     const camelizeObj = snakeKeys(testObj);
@@ -17,7 +13,7 @@ describe('test snakelizeKeys!!！', () => {
   });
 
   it('array!!', done => {
-    const testObj: ISnakeObject[] = [
+    const testObj: Object[] = [
       {
         helloWorld: 'test',
       },

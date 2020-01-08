@@ -1,6 +1,6 @@
-const numberGroupBy = (array: any[], subGroupLength: number) => {
+const numberGroupBy = <T>(array: T[], subGroupLength: number): T[][] => {
   let index: number = 0;
-  const newArray: any[] = [];
+  const newArray: T[][] = [];
   while (index < array.length) {
     newArray.push(array.slice(index, index += subGroupLength));
   }

@@ -1,5 +1,5 @@
-class LruCache {
-  private cache: Map<string, any>;
+class LruCache<T> {
+  private cache: Map<string, T>;
 
   private capacity: number;
 
@@ -18,7 +18,7 @@ class LruCache {
     return -1;
   }
 
-  put(key: string, value: any) {
+  put(key: string, value: T) {
     if (this.cache.has(key)) {
       this.cache.delete(key);
     }

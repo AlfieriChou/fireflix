@@ -1,12 +1,8 @@
-interface Obj {
-  [s: string]: any
-}
-
 interface GroupObj {
-  [s: string]: Obj[]
+  [s: string]: Object[]
 }
 
-const groupBy = (list: Obj[], key: string) => list.reduce((result: GroupObj, item: Obj) => {
+const groupBy = (list: Object[], key: string) => list.reduce((result: GroupObj, item: Object) => {
   const ret: GroupObj = result;
   (ret[item[key]] = ret[item[key]] || []).push(item);
   return ret;

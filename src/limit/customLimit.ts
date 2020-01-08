@@ -1,17 +1,17 @@
-declare class Limit {
+declare class Limit<T> {
   public clear(key: string): void
 
   public clearAll(): void
 
-  public getValue(key: string): any
+  public getValue(key: string): T | undefined
 
   public length(): number
 
-  public execute(key: string, fn: Function): Promise<any>
+  public execute(key: string, fn: Function): Promise<T>
 }
 
-export default class CustomLimit implements Limit {
-  private cache: Map<string, any>;
+export default class CustomLimit<T> implements Limit<T> {
+  private cache: Map<string, T>;
 
   constructor() {
     this.cache = new Map();
@@ -39,7 +39,7 @@ export default class CustomLimit implements Limit {
       return value;
     }
     this.clearAll();
-    const ret = fn();
+    const ret: T = fn();
     this.cache.set(key, ret);
     return ret;
   }

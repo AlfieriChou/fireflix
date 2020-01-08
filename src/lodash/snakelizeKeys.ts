@@ -1,12 +1,8 @@
 import { snakeCase } from 'lodash';
 
-interface ISnakeObject {
-  [s: string]: any
-}
-
 const snakeKeys = (
-  obj: ISnakeObject | ISnakeObject[],
-): ISnakeObject | ISnakeObject[] => {
+  obj: Object | Object[],
+): Object | Object[] => {
   if (Array.isArray(obj)) {
     return obj.map(v => snakeKeys(v));
   }

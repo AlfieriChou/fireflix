@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/AlfieriChou/sharp-func/compare/v2.2.0...v3.0.0) (2020-01-03)
+
+
+### Features
+
+* crypto decrypted and encrypted ([15bfab9](https://github.com/AlfieriChou/sharp-func/commit/15bfab9ceedd2cf892350531f6127c8df4f38285))
+* cutom limit ([de795ba](https://github.com/AlfieriChou/sharp-func/commit/de795bac69031ba9a838e6e80b850a012ee79649))
+* deepMapKeys ([fc20f3f](https://github.com/AlfieriChou/sharp-func/commit/fc20f3f78d3a6562760d2cf563e4b9f3aa869a91))
+* object pair ([3e7381a](https://github.com/AlfieriChou/sharp-func/commit/3e7381a61ca9cd3443e3401772eaeff2096b6fec))
+
+
+### Bug Fixes
+
+* limit eslint ([567b24f](https://github.com/AlfieriChou/sharp-func/commit/567b24f7a8815ffc7dd7d1b6794601f38fe926d8))
+
 ## [2.2.0](https://github.com/AlfieriChou/sharp-func/compare/v2.1.0...v2.2.0) (2019-12-21)
 
 

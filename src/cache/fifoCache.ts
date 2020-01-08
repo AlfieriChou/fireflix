@@ -1,7 +1,7 @@
-class FifoCache {
+class FifoCache<T> {
   private limit: number;
 
-  private map: Map<string, any>;
+  private map: Map<string, T>;
 
   private keys: string[];
 
@@ -11,7 +11,7 @@ class FifoCache {
     this.keys = [];
   }
 
-  public set(key: string, value: any): void {
+  public set(key: string, value: T): void {
     if (!this.map.has(key)) {
       this.keys.push(key);
       if (this.keys.length > this.limit) {
@@ -21,7 +21,7 @@ class FifoCache {
     this.map.set(key, value);
   }
 
-  public get(key: string): any {
+  public get(key: string) {
     if (this.map.has(key)) {
       return this.map.get(key);
     }

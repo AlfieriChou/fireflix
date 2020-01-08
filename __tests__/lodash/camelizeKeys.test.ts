@@ -1,12 +1,8 @@
 import camelizeKeys from '../../src/lodash/camelizeKeys';
 
-interface ICamelObject {
-  [s: string]: any
-}
-
 describe('test camelizeKeys!!！', () => {
   it('object!!', done => {
-    const testObj: ICamelObject = {
+    const testObj: Object = {
       hello_world: 'test',
     };
     const camelizeObj = camelizeKeys(testObj);
@@ -17,7 +13,7 @@ describe('test camelizeKeys!!！', () => {
   });
 
   it('array!!', done => {
-    const testObj: ICamelObject[] = [
+    const testObj: Object[] = [
       {
         hello_world: 'test',
       },

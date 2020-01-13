@@ -1,5 +1,7 @@
 # Fireflix
 
+[![Build Status](https://github.com/AlfieriChou/fireflix/workflows/Node%20CI/badge.svg?branch=master&event=push)](https://github.com/AlfieriChou/fireflix/actions)
+
 Summary of common functions.
 
 ## array

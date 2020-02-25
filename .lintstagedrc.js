@@ -1,10 +1,6 @@
 module.exports = {
-  '*.{ts}': [
-    'eslint --ext .ts ./ --fix',
-    'git add'
-  ],
-  'index.js': [
-    'eslint ./index.js --fix',
+  '*.{ts.js}': [
+    'eslint --format "node_modules/eslint-friendly-formatter" --fix',
     'git add'
   ]
 }

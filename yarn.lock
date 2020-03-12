@@ -506,10 +506,10 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
-"@types/ioredis@4.14.3":
-  version "4.14.3"
-  resolved "https://registry.npm.taobao.org/@types/ioredis/download/@types/ioredis-4.14.3.tgz?cache=0&sync_timestamp=1576680853582&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fioredis%2Fdownload%2F%40types%2Fioredis-4.14.3.tgz#6a6089296d6fb90bbaee96d36b19d480efff026a"
-  integrity sha1-amCJKW1vuQu67pbTaxnUgO//Amo=
+"@types/ioredis@4.14.9":
+  version "4.14.9"
+  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.14.9.tgz#774387d44d3ad60e1b849044b2b28b96e5813866"
+  integrity sha512-yNdzppM6vY4DYqXCnt4A3PXArxsMWeJCYxFlyl4AJKrNSGMEAP9TPcXR+8Q6zh9glcCtxmwMQhi4pwdqqHH3OA==
   dependencies:
     "@types/node" "*"
 
@@ -2982,10 +2982,10 @@ invariant@^2.2.4:
   dependencies:
     loose-envify "^1.0.0"
 
-ioredis@4.14.1:
-  version "4.14.1"
-  resolved "https://registry.npm.taobao.org/ioredis/download/ioredis-4.14.1.tgz#b73ded95fcf220f106d33125a92ef6213aa31318"
-  integrity sha1-tz3tlfzyIPEG0zElqS72ITqjExg=
+ioredis@4.16.0:
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.16.0.tgz#44d51288e20da14e5b6f687b2db0312e69106556"
+  integrity sha512-tlalhtuvnxXJNtrPjec1nGicuOCpi9ErYV/fRfwaWSzktX9ESrzHlcFwj1pVAL326E8dmt7h9pPQZyyVPPksRA==
   dependencies:
     cluster-key-slot "^1.1.0"
     debug "^4.1.1"

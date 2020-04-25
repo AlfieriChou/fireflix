@@ -3,7 +3,7 @@ import Axios from 'axios';
 import { promisify } from 'util';
 import * as http from 'http';
 
-function buildForm(data: Object) {
+function buildForm(data: Record<string, any>) {
   const form = new FormData();
   Object.entries(data).forEach(([k, v]) => form.append(k, v));
   return form;
@@ -20,7 +20,7 @@ async function getFormHeaders(form: FormData) {
 
 const fileUpload = async (
   url: string,
-  data: Object,
+  data: Record<string, any>,
   headers?: http.IncomingHttpHeaders,
 ) => {
   const formData = buildForm(data);

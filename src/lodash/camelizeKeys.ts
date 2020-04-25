@@ -1,10 +1,10 @@
 import { camelCase } from 'lodash';
 
 const camelizeKeys = (
-  obj: Object | Object[],
-): Object | Object[] => {
+  obj: Record<string, any> | Record<string, any>[],
+): Record<string, any> | Record<string, any>[] => {
   if (Array.isArray(obj)) {
-    return obj.map(v => camelizeKeys(v));
+    return obj.map((v) => camelizeKeys(v));
   }
   if (obj !== null && obj.constructor === Object) {
     return Object.keys(obj).reduce(

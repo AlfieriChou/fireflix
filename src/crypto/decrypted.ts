@@ -3,7 +3,7 @@ import * as crypto from 'crypto';
 interface decryptedOptions {
   algorithm?: string;
   key: string;
-  iv: string
+  iv: string;
 }
 
 const decrypted = (encryptedData: string, options: decryptedOptions) => {

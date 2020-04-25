@@ -7,7 +7,7 @@
     "test": "jest --coverage --detectOpenHandles --forceExit",
     "commit": "git-cz",
     "release": "standard-version",
-    "lint": "eslint --ext .ts ./ --fix"
+    "lint": "eslint --format \"node_modules/eslint-friendly-formatter\" ./ --fix"
   },
   "config": {
     "commitizen": {
@@ -29,11 +29,12 @@
     "@types/ioredis": "4.14.9",
     "@types/jest": "25.1.4",
     "@types/lodash": "4.14.149",
-    "@typescript-eslint/eslint-plugin": "2.24.0",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
     "eslint": "6.8.0",
-    "eslint-config-airbnb-typescript": "7.2.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
     "eslint-friendly-formatter": "4.0.1",
-    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "husky": "4.2.3",
     "jest": "25.1.0",
     "lint-staged": "10.0.8",
@@ -50,5 +51,8 @@
     "form-data": "3.0.0",
     "ioredis": "4.16.0",
     "lodash": "4.17.15"
+  },
+  "peerDependencies": {
+    "eslint-plugin-react": "^7.19.0"
   }
 }

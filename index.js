@@ -10,7 +10,7 @@ function isClass(func) {
 
 const files = dir(`${appRoot}/dist`);
 
-files.forEach(item => {
+files.forEach((item) => {
   /* eslint-disable import/no-dynamic-require */
   /* eslint-disable global-require */
   const name = path.parse(item).base.replace(/\.\w+$/, '');

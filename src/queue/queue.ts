@@ -1,11 +1,11 @@
 interface QueueOptions {
-  delayUntil?: number
+  delayUntil?: number;
 }
 
 class Queue<T> {
   private list: T[] = [];
 
-  private delayedItems: number = 0;
+  private delayedItems = 0;
 
   public size(): number {
     return this.list.length + this.delayedItems;

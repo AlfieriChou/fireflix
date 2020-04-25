@@ -4,7 +4,7 @@ const stringPermutations = (str: string): Array<string> => {
     .split('')
     .reduce(
       (acc: Array<string>, letter, i) => acc.concat(
-        stringPermutations(str.slice(0, i) + str.slice(i + 1)).map(val => letter + val),
+        stringPermutations(str.slice(0, i) + str.slice(i + 1)).map((val) => letter + val),
       ),
       [],
     );

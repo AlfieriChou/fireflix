@@ -3,7 +3,7 @@ export const intersection = <T>(
   b: Array<T>,
 ): Array<T> => {
   const s = new Set(b);
-  return a.filter(x => s.has(x));
+  return a.filter((x) => s.has(x));
 };
 
 export const intersectionBy = <T>(
@@ -12,11 +12,11 @@ export const intersectionBy = <T>(
   fn: (a: T) => T,
 ): Array<T> => {
   const s = new Set(b.map(fn));
-  return a.filter(x => s.has(fn(x)));
+  return a.filter((x) => s.has(fn(x)));
 };
 
 export const intersectionWith = <T>(
   a: Array<T>,
   b: Array<T>,
   comp: (a: T, b: T) => boolean,
-): Array<T> => a.filter(x => b.findIndex(y => comp(x, y)) !== -1);
+): Array<T> => a.filter((x) => b.findIndex((y) => comp(x, y)) !== -1);

@@ -1,13 +1,14 @@
 declare class Limit<T> {
-  public clear(key: string): void
+  public clear(key: string): void;
 
-  public clearAll(): void
+  public clearAll(): void;
 
-  public getValue(key: string): T | undefined
+  public getValue(key: string): T | undefined;
 
-  public length(): number
+  public length(): number;
 
-  public execute(key: string, fn: Function): Promise<T>
+  // eslint-disable-next-line @typescript-eslint/ban-types
+  public execute(key: string, fn: Function): Promise<T>;
 }
 
 export default class CustomLimit<T> implements Limit<T> {
@@ -33,6 +34,7 @@ export default class CustomLimit<T> implements Limit<T> {
     return this.cache.size;
   }
 
+  // eslint-disable-next-line @typescript-eslint/ban-types
   public async execute(key: string, fn: Function) {
     const value = this.cache.get(key);
     if (value) {

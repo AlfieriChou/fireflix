@@ -1,4 +1,4 @@
-import * as IORedis from 'ioredis';
+import * as IORedis from "ioredis";
 
 class RedisStore {
   private readonly redis: IORedis.Redis;

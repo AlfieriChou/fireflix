@@ -5,7 +5,7 @@ const isJson = (data: string): boolean => {
   } catch (e) {
     return false;
   }
-  if (typeof ret === 'object' && ret !== null) {
+  if (typeof ret === "object" && ret !== null) {
     return true;
   }
 

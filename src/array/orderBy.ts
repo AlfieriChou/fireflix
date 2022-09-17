@@ -1,7 +1,9 @@
-const dynamicSort = (prop: string): ((a: Record<string, any>, b: Record<string, any>) => number) => {
+const dynamicSort = (
+  prop: string
+): ((a: Record<string, any>, b: Record<string, any>) => number) => {
   let order = 1;
   let property: string;
-  if (prop.startsWith('-')) {
+  if (prop.startsWith("-")) {
     order = -1;
     property = prop.substring(1);
   } else {
@@ -20,6 +22,9 @@ const dynamicSort = (prop: string): ((a: Record<string, any>, b: Record<string, 
   };
 };
 
-const orderBy = (objs: Record<string, any>[], property: string): Record<string, any>[] => objs.sort(dynamicSort(property));
+const orderBy = (
+  objs: Record<string, any>[],
+  property: string
+): Record<string, any>[] => objs.sort(dynamicSort(property));
 
 export default orderBy;

@@ -1,7 +1,7 @@
-import { camelCase } from 'lodash';
+import { camelCase } from "lodash";
 
 const camelizeKeys = (
-  obj: Record<string, any> | Record<string, any>[],
+  obj: Record<string, any> | Record<string, any>[]
 ): Record<string, any> | Record<string, any>[] => {
   if (Array.isArray(obj)) {
     return obj.map((v) => camelizeKeys(v));
@@ -12,7 +12,7 @@ const camelizeKeys = (
         ...result,
         [camelCase(key)]: camelizeKeys(obj[key]),
       }),
-      {},
+      {}
     );
   }
   return obj;

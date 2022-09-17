@@ -1,14 +1,27 @@
 const deepMapKeys = <T>(
-  obj: Record<string, any> | Array<T>, fn: Function,
-  // eslint-disable-next-line no-nested-ternary
-): Record<string, any> | Array<T> => (Array.isArray(obj)
-    ? obj.map((val) => deepMapKeys(val, fn))
-    : typeof obj === 'object'
-      ? Object.keys(obj).reduce((acc, current) => {
-        const val = obj[current];
-        acc[fn(current)] = val !== null && typeof val === 'object' ? deepMapKeys(val, fn) : (acc[fn(current)] = val);
-        return acc;
-      }, {})
-      : obj);
+  data: Record<string, any> | Array<T>,
+  fn: (key: string) => string
+): Record<string, any> | Array<T> => {
+  if (Array.isArray(data)) {
+    return data.map((val) => deepMapKeys(val, fn));
+  }
+  if (typeof data === "object") {
+    return Object.keys(data).reduce((acc, current) => {
+      const value = data[current];
+      const key = fn(current);
+      if (value !== null && typeof value === "object") {
+        return {
+          ...acc,
+          [key]: deepMapKeys(value, fn),
+        };
+      }
+      return {
+        ...acc,
+        [key]: value,
+      };
+    }, {});
+  }
+  return data;
+};
 
 export default deepMapKeys;

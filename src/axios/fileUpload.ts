@@ -1,7 +1,7 @@
-import * as FormData from 'form-data';
-import Axios from 'axios';
-import { promisify } from 'util';
-import * as http from 'http';
+import * as FormData from "form-data";
+import Axios from "axios";
+import { promisify } from "util";
+import * as http from "http";
 
 function buildForm(data: Record<string, any>) {
   const form = new FormData();
@@ -14,14 +14,14 @@ async function getFormHeaders(form: FormData) {
   const len = await getLen();
   return {
     ...form.getHeaders(),
-    'Content-Length': len,
+    "Content-Length": len,
   };
 }
 
 const fileUpload = async (
   url: string,
   data: Record<string, any>,
-  headers?: http.IncomingHttpHeaders,
+  headers?: http.IncomingHttpHeaders
 ) => {
   const formData = buildForm(data);
   let formHeaders = await getFormHeaders(formData);

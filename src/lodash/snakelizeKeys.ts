@@ -1,7 +1,7 @@
-import { snakeCase } from 'lodash';
+import { snakeCase } from "lodash";
 
 const snakeKeys = (
-  obj: Record<string, any> | Record<string, any>[],
+  obj: Record<string, any> | Record<string, any>[]
 ): Record<string, any> | Record<string, any>[] => {
   if (Array.isArray(obj)) {
     return obj.map((v) => snakeKeys(v));
@@ -12,7 +12,7 @@ const snakeKeys = (
         ...result,
         [snakeCase(key)]: snakeKeys(obj[key]),
       }),
-      {},
+      {}
     );
   }
   return obj;

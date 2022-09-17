@@ -6,7 +6,7 @@ const permutation = <T>(
 
   const ret: Array<Array<T>> = items[0].reduce(
     (result: Array<Array<T>>, value) =>
-      result.concat(permutation(items.slice(1), [...prepend, value])),
+      result.concat(permutation(items.slice(1), prepend.concat(value))),
     []
   );
 
